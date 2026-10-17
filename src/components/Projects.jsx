@@ -3,39 +3,39 @@ import { motion } from "framer-motion";
 const projects = [
 
 {
+title:"Shri Vighnaharta Mitra Mandal – Live Web Platform",
+
+tech:"React.js • Node.js • Express • MongoDB • Tailwind CSS",
+
+desc:"Live production website for a 36-year-old Ganeshotsav mandal in Beed, independently built and maintained. Bilingual (English/Marathi) UI, JWT-secured admin dashboard for donations, members and volunteers, UPI QR payments and automated PDF receipts.",
+
+github:"",
+
+demo:"https://www.vighnhartamitramandal.com"
+},
+
+{
+title:"Event Booking Management System",
+
+tech:"Java • Spring Boot • React.js • MySQL • JWT",
+
+desc:"Full-stack event booking platform with Spring Security, JWT role-based auth (User/Admin), double-booking prevention using pessimistic and optimistic locking, auto-release of unpaid bookings and an admin dashboard with JUnit/Mockito tests.",
+
+github:"https://github.com/shreyas-awdal-7/event-booking-system",
+
+demo:"https://event-booking-system-gilt-one.vercel.app"
+},
+
+{
 title:"Employee Management System",
 
-tech:"Java • Spring Boot • MySQL • REST APIs",
+tech:"React.js • Node.js • Express • MongoDB • JWT",
 
-desc:"Developed an Employee Management System with CRUD operations, REST APIs, input validation and exception handling using Spring Boot and MySQL.",
+desc:"MERN HR platform with role-based access for Admin, Manager and Employee, attendance check-in/out, leave approvals, Recharts dashboards and one-click monthly payroll with PDF payslips.",
 
-github:"#",
+github:"https://github.com/shreyas-awdal-7/employee-management-system",
 
-demo:"#"
-},
-
-{
-title:"Category Product Management",
-
-tech:"Java • Spring Boot • MySQL",
-
-desc:"Developed a Category Product Management System with one-to-many relationship, CRUD operations and Spring Data JPA integration.",
-
-github:"#",
-
-demo:"#"
-},
-
-{
-title:"Portfolio Website",
-
-tech:"React.js • Tailwind CSS",
-
-desc:"Designed and developed a fully responsive portfolio website showcasing projects, skills, resume and contact information.",
-
-github:"#",
-
-demo:"#"
+demo:"https://ems-shreyas.vercel.app"
 }
 
 ];
@@ -110,9 +110,15 @@ className="h-52 w-full object-cover"
 
 <div className="flex gap-4 mt-6">
 
+{project.github && (
+
 <a
 
 href={project.github}
+
+target="_blank"
+
+rel="noopener noreferrer"
 
 className="bg-cyan-500 px-5 py-2 rounded-lg"
 
@@ -122,9 +128,15 @@ GitHub
 
 </a>
 
+)}
+
 <a
 
 href={project.demo}
+
+target="_blank"
+
+rel="noopener noreferrer"
 
 className="border border-cyan-400 px-5 py-2 rounded-lg"
 

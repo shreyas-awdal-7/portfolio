@@ -11,7 +11,9 @@ desc:"Live production website for a 36-year-old Ganeshotsav mandal in Beed, inde
 
 github:"",
 
-demo:"https://www.vighnhartamitramandal.com"
+demo:"https://www.vighnhartamitramandal.com",
+
+image:"/projects/vighnaharta.jpg"
 },
 
 {
@@ -23,7 +25,9 @@ desc:"Full-stack event booking platform with Spring Security, JWT role-based aut
 
 github:"https://github.com/shreyas-awdal-7/event-booking-system",
 
-demo:"https://event-booking-system-gilt-one.vercel.app"
+demo:"https://event-booking-system-gilt-one.vercel.app",
+
+image:"/projects/eventbooking.jpg"
 },
 
 {
@@ -35,7 +39,9 @@ desc:"MERN HR platform with role-based access for Admin, Manager and Employee, a
 
 github:"https://github.com/shreyas-awdal-7/employee-management-system",
 
-demo:"https://ems-shreyas.vercel.app"
+demo:"https://ems-shreyas.vercel.app",
+
+image:"/projects/ems.jpg"
 }
 
 ];
@@ -80,11 +86,13 @@ className="bg-slate-800 rounded-xl overflow-hidden border border-slate-700"
 
 <img
 
-src={`https://picsum.photos/600/400?random=${index}`}
+src={project.image}
 
-alt=""
+alt={`${project.title} screenshot`}
 
-className="h-52 w-full object-cover"
+loading="lazy"
+
+className="h-52 w-full object-cover object-top"
 
 />
 

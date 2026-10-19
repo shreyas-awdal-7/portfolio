@@ -50,7 +50,9 @@ const Hero = () => {
             </a>
 
             <a
-              href="/resume.pdf"
+              href="/resume.pdf?v=2"
+              target="_blank"
+              rel="noopener noreferrer"
               className="border border-cyan-400 px-8 py-3 rounded-lg flex items-center gap-2 hover:bg-cyan-500 hover:text-black duration-300"
             >
               <FaDownload />
